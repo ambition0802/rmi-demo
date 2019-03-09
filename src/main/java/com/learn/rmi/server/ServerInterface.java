@@ -11,6 +11,12 @@ import java.rmi.RemoteException;
  */
 public interface ServerInterface extends Remote {
 	
+	/**
+	 * this method will be invoked by remote
+	 * so it must be declared that THROWS REMOTEEXCEPTION
+	 * @return
+	 * @throws RemoteException
+	 */
 	public String hello() throws RemoteException;
 	
 }
